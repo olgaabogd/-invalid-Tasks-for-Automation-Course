@@ -21,10 +21,10 @@ test('locator.check.radiobutton', async ({ page }) => {
 
 
 test('locator.check.checkbox', async ({ page }) => {
-    await page.goto('https://demoqa.com/automation-practice-form');
-    await page.getByText('Music').click({force: true});
-    const locator3 = page.getByText('Music')
-    await expect(locator3).toBeChecked();
+  await page.goto('https://demoqa.com/automation-practice-form');
+  await page.getByText('Music').click({force: true});
+  const locator3 = page.getByText('Music')
+  await expect(locator3).toBeChecked();
 
 });
 
